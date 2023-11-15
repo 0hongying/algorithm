@@ -11,6 +11,9 @@ function quickExponentiation(a, n) {
     }
 }
 
+const ret = quickExponentiation(3, 3);
+console.log(ret);
+
 // 非递归
 function quickExponentiation1(a, n) {
     let ret = 1
@@ -25,9 +28,5 @@ function quickExponentiation1(a, n) {
     return ret
 }
 
-/**
- * 思路
- * 2 * 2 * 2 * 2 * 2 = 4 * 4 * 2
- * 偶数次幂等于(底数*底数)^n/2
- * 奇数次幂等于底数^n-1*底数
- */
+const ret = quickExponentiation1(3, 3);
+console.log(ret);
